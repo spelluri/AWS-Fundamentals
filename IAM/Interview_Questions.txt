@@ -1,0 +1,71 @@
+🟦 Beginner-Level IAM Interview Questions
+1. What is IAM in AWS?
+2. What is an IAM User?
+3. Why do we need IAM instead of using the root account?
+4. What is an IAM Group?
+5. Can a user be part of multiple IAM groups?
+6. Can IAM groups be nested?
+7. What is an IAM Policy?
+8. What is the difference between IAM Users and Roles?
+9. Where do we attach IAM Policies?
+
+(Users, Groups, Roles)
+
+10. What is the principle of least privilege?
+
+🟩 Intermediate-Level IAM Interview Questions
+11. What happens when you add a user to an IAM group?
+12. What happens if you add a new policy to an IAM group?
+13. What is an inline policy vs a managed policy?
+14. What is the difference between AWS managed policies and customer managed policies?
+15. What is the IAM policy evaluation logic?
+
+(Allow vs Deny, Explicit Deny wins)
+
+16. What are Identity-based and Resource-based policies?
+17. Can you give an example of a resource-based policy?
+
+(e.g., S3 bucket policy, Lambda resource policy)
+
+18. How do IAM Roles work with EC2 instances?
+19. What is an AssumeRole operation?
+20. What is MFA, and how does IAM support it?
+21. What is an access key and secret key?
+22. How do you rotate access keys?
+
+🟥 Advanced IAM Interview Questions
+23. When to use an IAM Role instead of an IAM User?
+24. What happens if a user has an Allow from a group but a Deny in an inline policy?
+25. How do you give temporary access to a third-party vendor?
+
+(STS, AssumeRole)
+
+26. How do Cross-Account access and IAM Roles work?
+27. How do you restrict access to AWS resources from specific IP ranges?
+
+(Using policy conditions)
+
+28. What is a Service Control Policy (SCP)?
+
+(In AWS Organizations)
+
+29. What is Permission Boundary and why do we use it?
+30. What is the difference between permissions boundaries and IAM policies?
+31. How does IAM integrate with federated access (AD, Okta, Google Workspace)?
+32. What are Session Policies?
+
+🟦 Practical/Scenario-based IAM Questions
+33. Your developer needs only read access to S3. How do you give it?
+34. How do you stop a user from deleting EC2 instances but allow starting/stopping?
+35. A user says they still cannot access an S3 bucket even after giving permissions — why?
+
+(Hints: explicit deny, bucket policy override, VPC endpoint policy)
+
+36. You want an EC2 instance to upload logs to S3 automatically. What do you configure?
+
+(IAM Role + Instance Profile)
+
+37. How do you lock a user to only access AWS from your office IP?
+38. How do you give temporary CLI access without creating a user?
+39. A user’s IAM policy allows S3 access but they still get “Access Denied.” What could be wrong?
+40. How do you enable MFA for all users in your organization?

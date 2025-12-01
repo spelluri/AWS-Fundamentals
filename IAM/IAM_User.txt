@@ -1,0 +1,23 @@
+1. What is an IAM User?
+An IAM user is basically a digital identity that represents a person or application that needs to interact with AWS. Think of it like creating an employee badge for someone - it's their unique identity within your AWS account.
+Each IAM user gets:
+
+A unique username
+Long-term credentials (password for console access and/or access keys for programmatic access)
+Their own set of permissions that determine what they can and cannot do.
+
+2. What Happens When You Create a User Without Any Policies?
+Here's the interesting part: that user can basically do nothing.
+AWS follows the principle of "implicit deny" - by default, everything is denied unless you explicitly allow it. So if you create an IAM user and don't attach any policies, that user can:
+
+✅ Log into the AWS Console (if you gave them console access)
+✅ Change their own password
+✅ Set up MFA for themselves
+❌ Access any AWS services
+❌ View any resources
+❌ Create, modify, or delete anything
+
+They'll basically see a bunch of "Access Denied" errors everywhere they click. It's like giving someone a badge to enter the building but not giving them keys to any rooms inside.
+This is actually a good security practice! It means you start with zero permissions and add only what's needed. It's called the principle of least privilege - give people the minimum access they need to do their job, nothing extra.
+So after creating a user, you'd typically attach policies (either AWS managed policies or custom ones) to grant them the specific permissions they need.
+

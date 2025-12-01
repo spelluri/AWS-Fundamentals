@@ -1,0 +1,31 @@
+In AWS IAM, a Group is:
+
+👉 A collection of IAM users who share the same set of permissions (authorization policies).
+
+How it works:
+
+You create a group (e.g., DevOps-Team, Developers, Admins).
+
+You attach IAM policies to the group.
+
+Every user added to that group automatically inherits the permissions from those policies.
+
+Example:
+
+If you have a group called Developers with:
+
+AmazonS3ReadOnlyAccess
+
+AmazonEC2ReadOnlyAccess
+
+Any user you add to this group will automatically get read-only access to S3 and EC2.
+
+Good to remember:
+
+Groups cannot be nested (no group inside another group).
+
+Groups only contain users, not roles.
+
+A user can belong to multiple groups.
+
+If you want, I can help you draw a simple diagram or explain roles vs groups too.

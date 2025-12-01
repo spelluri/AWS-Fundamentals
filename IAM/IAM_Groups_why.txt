@@ -1,0 +1,24 @@
+1. What is the need of AWS Groups when you can create an IAM User and assign policies to the iam user?
+
+The Problem Without Groups
+Imagine you have 20 developers in your company. If you assign policies directly to each user:
+
+You need to attach the same 3-4 policies to all 20 developers individually
+When you hire developer #21, you need to remember which policies to attach
+When you need to add a new permission (like access to a new S3 bucket), you have to update all 20 users one by one
+When someone switches from developer to DevOps, you need to manually remove old policies and add new ones
+If you want to see who has what access, you need to check each user individually
+
+This gets messy fast. It's like managing permissions in a spreadsheet - totally doable for 5 people, a nightmare for 50.
+
+How Groups Solve This
+Groups let you manage permissions by role or job function instead of by individual person. Here's how it works:
+You create groups like:
+
+Developers
+DevOps-Engineers
+Data-Scientists
+Finance-Team
+Managers
+
+Then you attach the relevant policies to each group once. After that, you just add users to the appropriate groups.

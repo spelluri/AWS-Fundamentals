@@ -1,0 +1,35 @@
+1. What happens when you created a group and added new policies to the group , will those new policies get assigned to all the users in the group automatically and immediatly?
+
+Yes — the new policies will apply to all users in that group immediately. ✅
+
+How it works:
+
+IAM Groups work like “permission bundles.”
+
+When you attach a new policy to a group, every user who is a member of that group instantly inherits the new permissions.
+
+There is no delay, no manual refresh, and users do not need to log out and log in again.
+
+Example:
+
+You have a group Developers with 5 users.
+
+You attach a new policy: AmazonRDSReadOnlyAccess.
+
+All 5 users now have RDS read-only permissions immediately.
+
+When might you not see changes?
+
+Only in these rare cases:
+
+If the user also has explicitly denied permissions elsewhere (Deny always overrides Allow).
+
+If you’re checking using a service that caches authorization decisions (very rare).
+
+Otherwise, IAM policy evaluation is immediate.
+
+If you want, I can also explain:
+
+What happens if you remove a policy from a group
+
+Or how explicit deny works in IAM.

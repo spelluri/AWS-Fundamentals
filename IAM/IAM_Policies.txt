@@ -1,0 +1,2 @@
+What Are IAM Policies?
+Think of IAM policies as rule books that define what actions someone (or something) can or cannot do in AWS. They're written in JSON format and basically say things like "you can read from this S3 bucket" or "you can start and stop EC2 instances, but you can't delete them."
