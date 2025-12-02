@@ -1,0 +1,111 @@
+✅ Different Types of EC2 Instances
+
+EC2 instances are grouped into families, each targeting a specific workload.
+
+Here are the main categories:
+
+1️⃣ General Purpose Instances
+
+Balanced CPU + RAM.
+
+Examples:
+
+t2, t3, t4g → burstable
+
+m4, m5, m6i, m7g
+
+Use cases:
+
+Web servers
+
+Dev/test environments
+
+Small databases
+
+2️⃣ Compute Optimized Instances
+
+High CPU power.
+
+Examples:
+
+c4, c5, c6i, c7g
+
+Use cases:
+
+High-performance computing
+
+Gaming servers
+
+Media encoding
+
+Machine learning inference
+
+3️⃣ Memory Optimized Instances
+
+Lots of RAM.
+
+Examples:
+
+r5, r6i, r7g
+
+x1, x2
+
+u- series (very high memory)
+
+Use cases:
+
+Large databases
+
+In-memory caching (Redis, Memcached)
+
+Real-time big data processing
+
+4️⃣ Storage Optimized Instances
+
+Optimized for very fast storage I/O.
+
+Examples:
+
+i3, i4i
+
+d2, d3
+
+Use cases:
+
+NoSQL databases
+
+File servers
+
+Data warehouses
+
+5️⃣ GPU / Accelerated Computing Instances
+
+Used for graphics and AI.
+
+Examples:
+
+p3, p4 → GPU for ML training
+
+g4, g5 → graphics, gaming, ML inference
+
+inf1, trn1 → AWS Inferentia/Trainium chips
+
+Use cases:
+
+Machine learning training
+
+GPU-intensive rendering
+
+High-performance computing
+
+6️⃣ Arm-based (Graviton) Instances
+
+AWS custom ARM chips → super fast + cheaper.
+
+Examples:
+
+t4g, m6g, c6g, r6g
+
+Use cases:
+
+Cost-effective web/app servers

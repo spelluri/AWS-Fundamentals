@@ -1,0 +1,8 @@
+✅ What is AWS EC2?
+
+Amazon EC2 (Elastic Compute Cloud) is a service in AWS that allows you to launch virtual servers (called instances) in the cloud.
+
+Think of EC2 as renting a computer in AWS’s data center.
+You can choose the CPU, RAM, storage, OS (Linux/Windows), network speed, and configure it however you want.
+
+AWS calls this “Infrastructure as a Service (IaaS)”.

@@ -1,0 +1,61 @@
+✅ Why do we need EC2?
+
+We use EC2 because:
+
+1. No need to buy physical servers
+
+Instead of spending money on buying, maintaining, or powering physical machines, we deploy servers in minutes.
+
+2. Fully customizable
+
+You choose:
+
+how much CPU
+
+how much RAM
+
+how much storage
+
+OS
+
+network
+
+security
+
+scaling
+
+3. Pay only for what you use
+
+You are billed by:
+
+seconds (Linux)
+
+hours (Windows)
+
+instance size
+
+4. Highly scalable
+
+You can increase or decrease instances using:
+
+Auto Scaling Groups
+
+Load Balancers
+
+5. Used for almost everything
+
+EC2 is commonly used for:
+
+Web servers (Nginx, Apache)
+
+Application servers
+
+Databases (self-hosted)
+
+CI/CD tools like Jenkins
+
+Running containers
+
+Hosting microservices
+
+Batch jobs / automation
